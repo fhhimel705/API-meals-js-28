@@ -38,11 +38,11 @@ const displayMeals = (mealsData, limit ) => {
         <dialog id="my_modal_${index}" class="modal">
         <div class="modal-box">
           <h3 class="font-bold text-2xl"> ${meal.strMeal}</h3> <hr class = "border-t-1 border-red-400">
-          <img src='${meal.strMealThumb}' class="rounded-xl h-full w-full py-4 " alt="">
-          <p class=" font-semibold ">Category : ${meal.strCategory}</p>
-          <p class="py-2 font-semibold ">Cuisine : ${meal.strArea}</p>
-          <p><span class = "font-semibold text-xl">Instructions :</span> AThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-          <a class = "text-red-400 text-xl font-semibold" href="${meal.strYoutube}">View our YouTube Channel</a>
+          <img src='${meal.strMealThumb}' class="rounded-xl h-80 w-full py-4 " alt="">
+          <p class="text-lg ">    <span class = "font-semibold text-xl">Category</span> : ${meal.strCategory}</p>
+          <p class="text-lg py-2"><span class = "font-semibold text-xl">Cuisine </span>: ${meal.strArea}</p>
+          <p class = ""><span class = "font-semibold text-2xl">Instructions :</span> There are many variations of passages of Lorem Ipsum available, but the majority have suffered. </p>
+          <a class = "text-red-400 text-xl font-semibold pt-10" href="${meal.strYoutube}">View our YouTube Channel</a>
           <div class="modal-action">
             <form method="dialog">
               <button class=" bg-red-500 text-white font-semibold px-5 py-3 rounded-xl">Close</button>
