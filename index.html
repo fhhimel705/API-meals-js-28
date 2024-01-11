@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meals</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/index-style.css">
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="mx-auto">
+    <header>
+        <section class="header my-10 flex justify-between header01 px-5 md:px-0">
+            <h3 class="text-xl md:text-3xl font-semibold">HappyMeals</h3>
+            <button class="bg-orange-500 rounded-xl font-semibold text-white px-5 py-2">Sign Up</button>
+        </section>
+        <!-- -------------------------------- Banner ------------------------------- -->
+        <section class=" header rounded-xl opacity-90 bg-no-repeat w-full h-full" style="background-image: url(banner_1.png);">
+            <div class="items-center gap-10 div-01 py-16 md:py-36">
+                <h1 class="md:text-6xl text-4xl text-center font-semibold  text-white">Take Healthy, Be Healty <br> Happy meal
+                </h1>
+                <p class="text-white mx-auto text-center px-10 md:px-0 my-7">There are many variations of passages of Lorem Ipsum
+                    available, but the majority have  suffered alteration in some form, by injected humou.</p>
+                <div class="flex justify-center">
+                    <input id="search-field" type="text" placeholder='Search any food' class="p-3 w-5/12 rounded-l-xl ">
+                    <button onclick="searchMeals()" class="bg-orange-500 text-white font-semibold px-5 py-3 rounded-r-xl">Search</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="my-10 px-5 md:px-0">
+        <h2 class="text-3xl font-semibold text-center">Your Favourite Food</h2>
+        <section id="meals-section" class="my-10 grid md:grid-cols-3 gap-10">
+          
+<!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog> -->
+        </section>
+        <button id="show-all-btn" class="bg-orange-500 text-white font-semibold px-5 py-3 rounded-xl mx-auto justify-center flex">Show
+            All</button>
+    </main>
+    <footer class="bg-orange-100 rounded-xl">
+        <section class="footer grid grid-cols-3 md:grid-cols-4 gap-10 justify-between py-10 px-5 md:px-0">
+            <div class="grid gap-2">
+                <p class="text-2xl font-bold">Section</p>
+                <p class="text-xl">Home</p>
+                <p class="text-xl">Pricing</p>
+                <p class="text-xl">Faqs</p>
+                <p class="text-xl">Features</p>
+                <p class="text-xl">About</p>
+                
+
+            </div>
+            <div class="grid gap-2">
+                <p class="text-2xl font-bold">Section</p>
+                <p class="text-xl">UIUX Design</p>
+                <p class="text-xl">UIUX Design</p>
+                <p class="text-xl">UIUX Design</p>
+                <p class="text-xl">UIUX Design</p>
+                
+
+            </div>
+            <div class="grid gap-2">
+                <p class="text-2xl font-bold">Resource</p>
+                <p class="text-xl">Resource</p>
+                <p class="text-xl">Privacy & Policy</p>
+                <p class="text-xl">Section</p>
+                <p class="text-xl">Section</p>
+                
+
+            </div>
+                <div class="grid gap-2 mr-auto">
+                    <p class="text-2xl font-bold">Subscribe to our newsletter</p>
+                    <p class="text-xl my-5">There are many variations of passages of available, but the majority have
+                        suffered</p>
+                    <div class="md:flex">
+                        <input type="text" placeholder="Email address" class="p-3 rounded-xl md:rounded-l-xl w-full md:w-64">
+                        <button class="bg-orange-500 text-lg font-semibold px-5 py-3 rounded-xl lg:rounded-r-xl   ">Subscribe</button>
+                    </div>
+                </div>
+        </section>
+
+    </footer>
+
+<!-- script -->
+<script src="js fiels/meals.js"></script>
+
+
+</body>
+
+</html>
